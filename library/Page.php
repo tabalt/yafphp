@@ -379,18 +379,5 @@ class Page {
         $pageInfos .= "</ul>\n";
         return $pageInfos;
     }
-    
-    /**
-     * 获取是否到了最后一页
-     * @param int $nowPage
-     * @return boolean
-     */
-    public function getPageEnd($nowPage) {
-    	
-    	if( $this->totalPage <= $nowPage ) {
-    		return 1;
-    	} 
-    	return 0;
-    }
 }
 ?>
